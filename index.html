@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "hceStyle.css" />
 
   <link href="https://fonts.googleapis.com/css?family=Oswald|VT323|Goudy+Bookletter+1911|Ubuntu:500|Pacifico|Quicksand:500|Noto+Sans+KR:500" rel="stylesheet">
 
@@ -17,12 +20,16 @@
 
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
-      background-position: 50% 20.5%;
+      background-position: 50% 19%;
       background-repeat: no-repeat;
       background-size: 60%;
       width: 300px;
-      height: 500px;
+      height: 550px;
 
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     .parallax2 {
@@ -109,6 +116,7 @@
 
     .row-event {
       padding-top: 20px;
+      padding-left: 30px;
     }
 
     .row-title {
@@ -120,15 +128,144 @@
       color: gray;
     }
 
+
+    .events{
+      background-color: white;
+      /*border: 3px dashed #1c87c9;*/
+      display: flex;
+      flex-direction: column;
+    }
+
+    .event-lable {
+      margin-bottom: 10px;
+    }
+
+    .event {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
+
+    .event-image {
+      height: 250px;
+      flex-basis: 250px;
+      background-color: red;
+      border-radius: 15px;
+    }
+
+    .event-stuff {
+      height: 250px;
+      flex-basis: 80%;
+      border-radius: 15px;
+      background-color: #cdcdd8;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .event-header {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      /*ackground-color: black;*/
+    }
+
+    .event-descrp {
+      padding-left: 50px;
+      padding-top: 10px;
+      /*background-color: green;*/
+      text-align: left;
+
+    }
+
+
+
+
+    .img-mic-stand {
+      background-image: url("images/mic-stand-sm.jpg");
+    }
+
+    .img-land {
+      background-image: url("images/land-sm.jpg");
+    }
+
+    .img-google-home {
+      background-image: url("images/google-home-sm.jpg");
+    }
+
+    .img-houseless {
+      background-image: url("images/houseless-sm.jpg");
+    }
+    .img-hacking {
+      background-image: url("images/hacking-sm.jpg");
+    }
+
+    .img-tech-optimism {
+      background-image: url("images/tech-optimism-sm.jpg");
+    }
+
+    .img-trust {
+      background-image: url("images/trust-sm.jpg");
+    }
+
+    .img-big-data {
+      background-image: url("images/big-data-sm.jpg");
+    }
+
+    .img-surveillance {
+      background-image: url("images/surveillance-sm.jpg");
+    }
+
+    .img-free-speech {
+      background-image: url("images/free-speech-sm.jpg");
+    }
+
+
+
+
+
+
+
+
     .event-col {
       padding-left: 0px;
       padding-right: 0px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 400px;
+      background-color: #D3D3D3;
+      border-radius: 10px;
+    }
+
+    .event-title {
+      display: flex;
+      align-self: flex-start;
+      width: 100%;
+      margin: auto;
+      /*border-radius: 10px;
+      border: 3px dashed #1c87c9;*/
+      height: 150px;
+      position: absolute;
+      top: 0px;
+    }
+
+    .event-body {
+      position: absolute;
+      top: 150px;
+      /*border: 3px dashed #1c87c9;*/
+      height: 200px;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     .event-link-p {
       text-align: center;
       padding: 0px;
-      margin: 0px;
+      margin: auto; /* Important */
+      text-align: center;
       /*background-color: gray;*/
     }
 
@@ -141,6 +278,7 @@
     .event-info-i {
       margin: 0px;
       padding-left: 0px;
+      font-size: 19px;
     }
 
     .img {
@@ -159,43 +297,99 @@
       margin: 5px;
     }
 
+    .btn-primary {
+      background: #0099cc;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+        background: #33a6cc;
+    }
+
+    .btn-info {
+      background: #d7d8cd;
+      color: black;
+    }
+
+    .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info {
+        background: #c3c3c3;
+        color: black;
+    }
+
+    .btn-info:active {
+      color: black !important;
+      background-color: #c3c3c3 !important;
+      border-color: none !important;
+    }
+
+    .btn-info:active:focus {
+      color: #ffffff;
+      background-color: #d7d8cd;
+      border-color: black;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      background-color: #eff0ff;
+    }
+
+    .flex-container > div {
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .members {
+      display: flex;
+    }
+
+    .container {
+      figure {
+
+        background-image: url("images/HCE_card_bkg.png");
+        width: 100%;
+        height: 450px; //whatever height you want
+      }
+    }
 
   </style>
 </head>
+
 <body>
 
   <!--<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>-->
 
-
+<div id="top"></div>
   <div class="parallax" id="header"></div>
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">HCE</a>
+    <a class="navbar-brand" href="index.html#top">HCE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Course Desccription<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#course_description">Course Description<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Syllabus</a>
+          <a class="nav-link" href="#syllabus">Syllabus</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Events</a>
+          <a class="nav-link" href="#events">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="test.html">Projects / Members</a>
+          <a class="nav-link" href="#top">Projects / Members</a>
         </li>
       </ul>
     </div>
 </nav>
 
 
+
   <div class="container-fluid">
 
-    <div class="row row-1 justify-content-md-end">
+    <div class="row row-1 justify-content-md-end" id="course_description">
       <div class="col-sm-8 align-self-center">
         <h5 class="row-sub-title">History C184D/STS C104</h5>
         <h3 class="row-title">Human Contexts & Ethics of Data</h3>
@@ -223,8 +417,8 @@
         </div>
       </div>
   </div>
-  <div class="container-fluid">
 
+  <!--<div class="container-fluid">
     <div class="row row-2 justify-content-center">
       <div class="col-sm-4 text-center">
         <a class="btn btn-secondary" href="#" role="button">
@@ -237,85 +431,236 @@
         </a>
       </div>
     </div>
+  </div>-->
 
-    <div class="row-event">
-      <h3 class="row-title">Events</h3>
+  <div class="flex-container" id="syllabus">
+    <div class="text-center">
+      <a class="btn btn-primary" href="https://docs.google.com/document/d/1o96Qp4QbOQC-YrTAsRoqaGNGQH8anc2VjBAHuA2TQIU/edit" role="button">
+        <h1 class="btn-1">s y l l a b u s</h1>
+      </a>
     </div>
-    <div class="row row-3 justify-content-around">
-      <div class="col-sm-3 event-col">
-        <p class="event-link-p"><a class="event-link" href="#">Jacobs Design Conversations</a></p>
-        <p class="event-info-i">Elizabeth Churchill | Director of User Experience at Google</p>
-        <p class="event-info-i">November 16</p>
-        <p class="event-info-i">12:00PM - 1:00PM</p>
-        <p class="event-info-i">310 Jacobs Hall</p>
-        <p class="event-info-i">Jacobs Institute of Design Innovation</p>
-      </div>
-
-      <div class="col-sm-3 event-col">
-        <p class="event-link-p"><a class="event-link" href="#">Automating Inequality: How High-Tech Tools Profile, Police and Punish the Poor</a></p>
-        <p class="event-info-i">Virginia Eubanks | Associate Professor of Political Science</p>
-        <p class="event-info-i">November 29</p>
-        <p class="event-info-i">4:00PM - 5:30PM</p>
-        <p class="event-info-i">Banatao Auditorium</p>
-        <p class="event-info-i">Center for Science, Technology, Medicine and Society</p>
-      </div>
-
-      <div class="col-sm-3 event-col">
-        <p class="event-link-p"><a class="event-link" href="#">Hacking Politics: Symposium</a></p>
-        <p class="event-info-i">October 19</p>
-        <p class="event-info-i">10:00AM</p>
-        <p class="event-info-i">Sutardja Dai Hall</p>
-        <p class="event-info-i">Berkeley Center for New Media</p>
-      </div>
-    </div>
-
-
-    <div class="row row-3 justify-content-around">
-      <div class="col-sm-3 event-col">
-        <p class="event-link-p"><a class="event-link" href="#">Techno-Optimism Within and Beyond Silicon Valley</a></p>
-        <p class="event-info-i">October 19</p>
-        <p class="event-info-i">9:00AM - 5:00PM</p>
-        <p class="event-info-i">Social Science Matrix</p>
-        <p class="event-info-i">Jacobs Institute of Design Innovation</p>
-      </div>
-
-      <div class="col-sm-3 event-col">
-        <p class="event-link-p"><a class="event-link" href="#">HCE Conversations: Trust and Safetibility</a></p>
-        <p class="event-info-i">Alex Feerst | Head of Legal and Policy, Medium</p>
-        <p class="event-info-i">Renata Barreto | PhD Candidate in Berkeley Law, Intern at Twitter</p>
-        <p class="event-info-i">October 22</p>
-        <p class="event-info-i">7PM - 8:30PM</p>
-        <p class="event-info-i">Hearst Field Annex, Room B5</p>
-        <p class="event-info-i">Division of Data Sciences</p>
-      </div>
-
-      <div class="col-sm-3 event-col">
-        <p class="event-link-p"><a class="event-link" href="#">GDPR: Big Data, Big Responsibility</a></p>
-        <p class="event-info-i">Jeff Jonas | Data Scientist</p>
-        <p class="event-info-i">October 31</p>
-        <p class="event-info-i">4:10PM - 5:30PM</p>
-        <p class="event-info-i">202 South Hall</p>
-        <p class="event-info-i">Berkeley School of Information</p>
-      </div>
-    </div>
-
-    <div class="row row-3 justify-content-around">
-      <div class="col-sm-3 event-col">
-        <p class="event-link-p"><a class="event-link" href="#">The Age of Surveillance Capitalism</a></p>
-        <p class="event-info-i">Shoshana Zuboff | Professor, Harvard Business School</p>
-        <p class="event-info-i">Thursday November 8</p>
-        <p class="event-info-i">3:30PM - 5:30PM</p>
-        <p class="event-info-i">Bancroft Hotel</p>
-        <p class="event-info-i">Center for Science, Technology, Medicine and Society</p>\
-      </div>
-
-      <div class="col-sm-3 event-col">
-        <p class="event-link-p"><a class="event-link" href="#">Enabling Safe, Fair, and Free Speech…at Scale</a></p>
-        <p class="event-info-i">November 13</p>
-        <p class="event-info-i">Berkeley Division of Data Sciences</p>
-      </div>
+    <div class="text-center">
+      <a class="btn btn-secondary" href="https://bcourses.berkeley.edu/courses/1479019" role="button">
+        <h1 class="btn-1">b C o u r s e s</h1>
+      </a>
     </div>
   </div>
+
+
+
+  <div class="container-fluid events" id="events">
+    <div class="row-event event-lable">
+      <h3 class="row-title">Upcoming Events</h3>
+    </div>
+
+    <div class="event">
+      <div class="event-image img-mic-stand">
+        <!--<img src="images/mic-stand-sm.jpg" alt="Italian Trulli";>-->
+      </div>
+
+      <div class="event-stuff">
+        <div class="event-header">
+          <a class="event-link" href="http://bcnm.berkeley.edu/">
+          DH Fiar: Hate Speech, Algorithms, and Digital Connectivity</a>
+        </div>
+        <div class="event-descrp">
+          <p class="event-info-i">Zeynep Tufekci | Berkeley Center for New Media</p>
+          <p class="event-info-i">April 15<br></p>
+          <p class="event-info-i">This event is sponsored by Digital Humanities at Berkeley, D-Lab, Arts + Design, Berkeley Center for New Media, the Center for Technology and Society at the Anti-Defamatio League, Digital Humanities Working Group, ...</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="event">
+      <div class="event-image img-land">
+      </div>
+
+      <div class="event-stuff">
+        <div class="event-header">
+          <a class="event-link" href="http://cstms.berkeley.edu/current-events/land-grabbing-or-land-to-investors/">
+          Land Grabbing or Land to Investors?</a>
+        </div>
+        <div class="event-descrp">
+          <p class="event-info-i">Alfredo Bini | Photojournalist and ESPM Visiting Scholar</p>
+          <p class="event-info-i">24 April 2019</p>
+          <p class="event-info-i">4:15 pm - 5:30 pm</p>
+          <p class="event-info-i">470 Stephens Hall</p>
+          <p class="event-info-i">Center for Science, Technology, Medicine & Society</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--  B R E A K -->
+
+
+  <div class="container-fluid events" id="events">
+    <div class="row-event event-lable">
+      <h3 class="row-title">Past Events</h3>
+    </div>
+
+    <div class="event">
+      <div class="event-image img-google-home">
+        <!--<img src="images/mic-stand-sm.jpg" alt="Italian Trulli";>-->
+      </div>
+
+      <div class="event-stuff">
+        <div class="event-header">
+          <a class="event-link" href="http://events.berkeley.edu/index.php/calendar/sn/jacobs.html?event_ID=119751&date=2018-11-16">
+          Jacobs Design Conversations </a>
+        </div>
+        <div class="event-descrp">
+          <p class="event-info-i">Elizabeth Churchill | Director of User Experience at Google</p>
+          <p class="event-info-i">November 16</p>
+          <p class="event-info-i">12:00PM - 1:00PM</p>
+          <p class="event-info-i">310 Jacobs Hall</p>
+          <p class="event-info-i">Jacobs Institute of Design Innovation</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="event-image img-houseless">
+      </div>
+
+      <div class="event-stuff">
+        <div class="event-header">
+          <a class="event-link" href="https://cstms.berkeley.edu/current-events/automating-inequality-how-high-tech-tools-profile-police-and-punish-the-poor/" role="button">
+          Automating Inequality: How High-Tech Tools Profile, Police and Punish the Poor
+          </a>
+        </div>
+        <div class="event-descrp">
+          <p class="event-info-i">Virginia Eubanks | Associate Professor of Political Science</p>
+          <p class="event-info-i">November 29</p>
+          <p class="event-info-i">4:00PM - 5:30PM</p>
+          <p class="event-info-i">Banatao Auditorium</p>
+          <p class="event-info-i">Center for Science, Technology, Medicine and Society</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="event-image img-hacking">
+      </div>
+      <div class="event-stuff">
+        <div class="event-header">
+          <a class="event-link" href="http://bcnm.berkeley.edu/events/109/special-events/2689/hacking-politics-symposium">
+          Hacking Politics: Symposium
+          </a>
+        </div>
+        <div class="event-descrp">
+          <p class="event-info-i">October 19</p>
+          <p class="event-info-i">10:00AM</p>
+          <p class="event-info-i">Sutardja Dai Hall</p>
+          <p class="event-info-i">Berkeley Center for New Media</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="event-image img-tech-optimism">
+      </div>
+      <div class="event-stuff">
+        <div class="event-header">
+          <a class="event-link" href="https://cstms.berkeley.edu/current-events/techno-optimism-beyond-silicon-valley/">
+            Techno-Optimism Within and Beyond Silicon Valley
+          </a>
+        </div>
+        <div class="event-descrp">
+          <p class="event-info-i">October 19</p>
+          <p class="event-info-i">9:00AM - 5:00PM</p>
+          <p class="event-info-i">Social Science Matrix</p>
+          <p class="event-info-i">Jacobs Institute of Design Innovation</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="event-image img-trust">
+      </div>
+      <div class="event-stuff">
+        <div class="event-header">
+          <a class="event-link" href="https://docs.google.com/document/d/1zIY6302bdVg21BqtaxXM3f7YW1DYEy8RWA4qNK-yVx8/edit">
+          HCE Conversations: Trust and Safetibility
+          </a>
+        </div>
+        <div class="event-descrp">
+          <p class="event-info-i">Alex Feerst | Head of Legal and Policy, Medium</p>
+          <p class="event-info-i">Renata Barreto | PhD Candidate in Berkeley Law, Intern at Twitter</p>
+          <p class="event-info-i">October 22</p>
+          <p class="event-info-i">7PM - 8:30PM</p>
+          <p class="event-info-i">Hearst Field Annex, Room B5</p>
+          <p class="event-info-i">Division of Data Sciences</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="event-image img-big-data">
+      </div>
+      <div class="event-stuff">
+        <div class="event-header">
+          <a class="event-link" href="https://www.ischool.berkeley.edu/events/2018/gdpr-big-data-big-responsibility">
+            GDPR: Big Data, Big Responsibility
+          </a>
+        </div>
+        <div class="event-descrp">
+          <p class="event-info-i">Jeff Jonas | Data Scientist</p>
+          <p class="event-info-i">October 31</p>
+          <p class="event-info-i">4:10PM - 5:30PM</p>
+          <p class="event-info-i">202 South Hall</p>
+          <p class="event-info-i">Berkeley School of Information</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="event-image img-surveillance">
+      </div>
+      <div class="event-stuff">
+        <div class="event-header">
+          <a class="event-link" href="https://cstms.berkeley.edu/current-events/2018-11th-annual-bclt-privacy-lecture/">
+          The Age of Surveillance Capitalism
+          </a>
+        </div>
+        <div class="event-descrp">
+          <p class="event-info-i">Shoshana Zuboff | Professor, Harvard Business School</p>
+          <p class="event-info-i">Thursday November 8</p>
+          <p class="event-info-i">3:30PM - 5:30PM</p>
+          <p class="event-info-i">Bancroft Hotel</p>
+          <p class="event-info-i">Center for Science, Technology, Medicine and Society</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="event-image img-free-speech">
+      </div>
+      <div class="event-stuff">
+        <div class="event-header">
+          <a class="event-link" href="https://data.berkeley.edu/news/enabling-safe-fair-and-free-speech%E2%80%A6-scale">
+            Enabling Safe, Fair, and Free Speech…at Scale
+          </a>
+        </div>
+        <div class="event-descrp">
+          <p class="event-info-i">November 13</p>
+          <p class="event-info-i">Berkeley Division of Data Sciences</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
 
 
   <!-- Optional JavaScript -->
